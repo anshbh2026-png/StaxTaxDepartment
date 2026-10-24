@@ -7,5 +7,6 @@ namespace StaxTaxDepartment.Interfaces
         Task<ApiResponse<UserMobileResponse>> AuthenticateCredentialsAsync(LoginRequest request);
         Task<ApiResponse<string>> VerifyOtpAndGenerateTokenAsync(string username, string otp);
         Task<ApiResponse<UserMobileResponse>> ResendOtpAsync(LoginRequest request);
+        Task<ApiResponse<UserProfileResponse>> GetUserProfileAsync(string username); 
     }
 }

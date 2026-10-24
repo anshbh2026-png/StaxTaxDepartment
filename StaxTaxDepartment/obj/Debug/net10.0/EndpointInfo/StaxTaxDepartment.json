@@ -110,6 +110,27 @@
         }
       }
     },
+    "/api/Auth/profile": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Dashboard/data": {
       "get": {
         "tags": [
