@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\New Project\\StaxTaxDepartment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\models\\usermobileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\models\\usermobileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,14 +31,6 @@
       "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new project\\staxtaxdepartment\\staxtaxdepartment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -42,37 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Services\\UserService.cs",
               "ToolTip": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Services\\UserService.cs",
               "RelativeToolTip": "StaxTaxDepartment\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAIwBUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-24T05:54:29.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserMobileResponse.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "ToolTip": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "RelativeToolTip": "StaxTaxDepartment\\Models\\UserMobileResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-24T05:54:26.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\LoginRequest.cs",
@@ -80,12 +80,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T05:54:25.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-24T05:54:25.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\ApiResponse.cs",
@@ -93,12 +92,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\ApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T05:54:24.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-24T05:54:24.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Controllers\\DashboardController.cs",
@@ -106,12 +104,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T05:54:18.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-24T05:54:18.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Controllers\\AuthController.cs",
@@ -124,13 +121,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Program.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Program.cs",
               "ToolTip": "D:\\New Project\\StaxTaxDepartment\\StaxTaxDepartment\\Program.cs",
               "RelativeToolTip": "StaxTaxDepartment\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-23T06:29:11.233Z",
               "EditorCaption": ""
