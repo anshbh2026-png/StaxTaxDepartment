@@ -1,0 +1,6 @@
+@StaxTaxDepartment_HostAddress = http://localhost:5290
+
+GET {{StaxTaxDepartment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
