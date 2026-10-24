@@ -63,8 +63,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T07:12:52.357Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T07:09:00.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T07:09:00.983Z"
             },
             {
               "$type": "Document",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Program.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAAADoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T06:29:20.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T06:29:20.021Z"
             },
             {
               "$type": "Document",
@@ -115,8 +112,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-15T06:28:35.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T06:28:35.178Z"
             },
             {
               "$type": "Document",
@@ -128,8 +124,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAiwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T06:33:59.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T06:33:59.791Z"
             },
             {
               "$type": "Document",
@@ -141,8 +136,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T07:13:37.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T07:13:37.093Z"
             },
             {
               "$type": "Document",
@@ -154,8 +148,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T04:27:28.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T04:27:28.39Z"
             },
             {
               "$type": "Document",
@@ -179,8 +172,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-15T05:41:05.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T05:41:05.085Z"
             }
           ]
         }
