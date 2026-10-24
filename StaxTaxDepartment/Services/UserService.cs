@@ -284,6 +284,134 @@ namespace StaxTaxDepartment.Services
                 Console.WriteLine($"[MTALKZ] Request failed: {ex.Message}");
                 return false;
             }
+
+        }
+
+        public async Task<ApiResponse<UserProfileResponse>> GetUserProfileAsync(string username)
+        {
+            try
+            {
+                using var connection = new SqlConnection(_connectionString);
+                string userPrefix = username.Length >= 2 ? username.Substring(0, 2) : "";
+
+                string displayName = username;
+                string designation = "Tax Officer";
+                string gender = "Not Specified";
+                string email = "";
+                decimal mobile = 0;
+                string profileImage = "images/img.png"; // Default fallback image
+
+                if (userPrefix == "05")
+                {
+                    // Dealer lookup
+                    var dealer = await connection.QueryFirstOrDefaultAsync<dynamic>(
+                        "SELECT * FROM buss_detail_master WHERE tin_no = @Id", new { Id = username });
+                    if (dealer != null)
+                    {
+                        displayName = dealer.trade_nam ?? username;
+                        email = dealer.email ?? "";
+                    }
+                }
+                else
+                {
+                    // 1. Fetch login details to get auth_circle and auth_sect (just like legacy code uses Session values)
+                    var loginInfo = await connection.QueryFirstOrDefaultAsync<dynamic>(
+                        "SELECT auth_circle, auth_sect, username, permission FROM login WITH(NOLOCK) WHERE login_id = @Id",
+                        new { Id = username });
+
+                    string circleCode = loginInfo?.auth_circle?.Trim() ?? "";
+                    string sectorCode = loginInfo?.auth_sect?.Trim() ?? "";
+                    string sessionName = loginInfo?.username?.Trim() ?? username;
+                    //int permission = loginInfo?.permission ?? 0;
+
+                    // 2. Resolve Sector Name from sector_master
+                    string sectorName = sectorCode;
+                    if (!string.IsNullOrEmpty(sectorCode) && !string.IsNullOrEmpty(circleCode))
+                    {
+                        var resolvedSector = await connection.QueryFirstOrDefaultAsync<string>(
+                            "SELECT officename FROM sector_master WITH(holdlock,rowlock) WHERE officecode = @Sector AND newcode = @Circle",
+                            new { Sector = sectorCode, Circle = circleCode });
+                        if (!string.IsNullOrEmpty(resolvedSector)) sectorName = resolvedSector;
+                    }
+
+                    // 3. Resolve Circle Name from office_codes
+                    string circleName = circleCode;
+                    if (!string.IsNullOrEmpty(circleCode))
+                    {
+                        var resolvedCircle = await connection.QueryFirstOrDefaultAsync<string>(
+                            "SELECT office_name FROM office_codes WITH(holdlock,rowlock) WHERE New_code = @Circle",
+                            new { Circle = circleCode });
+                        if (!string.IsNullOrEmpty(resolvedCircle)) circleName = resolvedCircle;
+                    }
+
+                    // 4. Exact Gst_Officer_Master lookup matching legacy query
+                    var officerQuery = @"SELECT Name, Sector,employeecode,Gender, Email, Mobile, Image 
+                                 FROM Gst_Officer_Master 
+                                 WHERE sector = @Sec1 OR sector = @Sec2 OR sector = @Sec3";
+
+                    var officer = await connection.QueryFirstOrDefaultAsync<dynamic>(officerQuery, new
+                    {
+                        Sec1 = sectorName,
+                        Sec2 = circleName + sectorName,
+                        Sec3 = sessionName
+                    });
+
+                    if (officer != null)
+                    {
+                        displayName = officer.Name ?? sessionName;
+                        designation = officer.Designation ?? "Tax Officer";
+                        gender = officer.Gender ?? "Not Specified";
+                        email = officer.Email ?? "";
+                        mobile = officer.Mobile;
+
+                        // Handle Image BLOB to Base64 string conversion exactly like legacy code
+                        if (officer.Image != null)
+                        {
+                            byte[] bytes = officer.Image as byte[];
+                            if (bytes != null && bytes.Length > 0)
+                            {
+                                profileImage = "data:image/png;base64," + Convert.ToBase64String(bytes);
+                            }
+                        }
+                    }
+                    //else
+                    //{
+                    //    // 5. Permission-based fallback naming rule from legacy Page_Load
+                    //    if (permission == 1 || permission == 4)
+                    //    {
+                    //        displayName = sessionName;
+                    //    }
+                    //    else if (permission == 23)
+                    //    {
+                    //        displayName = $"{circleName} {sessionName}".Trim();
+                    //    }
+                    //    else
+                    //    {
+                    //        displayName = $"{circleName} {sectorName}".Trim();
+                    //    }
+                    //}
+                }
+
+                return new ApiResponse<UserProfileResponse>
+                {
+                    Success = true,
+                    Message = "Profile fetched successfully",
+                    Data = new UserProfileResponse
+                    {
+                        EmployeeCode = username,
+                        FullName = displayName,
+                        Designation = designation,
+                        Gender = gender,
+                        Email = email,
+                        Mobile = mobile,
+                        ProfileImageUrl = profileImage // Pass image string for frontend rendering
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<UserProfileResponse> { Success = false, Message = ex.Message };
+            }
         }
     }
 }

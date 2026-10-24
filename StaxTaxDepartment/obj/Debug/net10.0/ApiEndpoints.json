@@ -27,6 +27,22 @@
   },
   {
     "ContainingType": "StaxTaxDepartment.Controllers.AuthController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Auth/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StaxTaxDepartment.Controllers.AuthController",
     "Method": "ResendOtp",
     "RelativePath": "api/Auth/resend-otp",
     "HttpMethod": "POST",

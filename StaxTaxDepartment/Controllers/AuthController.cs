@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using StaxTaxDepartment.Interfaces;
 using StaxTaxDepartment.Models;
+using System.Security.Claims;
 
 namespace StaxTaxDepartment.Controllers
 {
@@ -81,6 +83,26 @@ namespace StaxTaxDepartment.Controllers
         public async Task<IActionResult> ResendOtp([FromBody] LoginRequest request)
         {
             var result = await _userService.ResendOtpAsync(request);
+            return Ok(result);
+        }
+
+        [HttpGet("profile")]
+        public async Task<IActionResult> GetProfile([FromQuery] string? username)
+        {
+            // If username query parameter is empty, fallback to token claims
+            if (string.IsNullOrEmpty(username))
+            {
+                username = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
+                           ?? User.FindFirst(System.Security.Claims.ClaimTypes.Name)?.Value
+                           ?? User.FindFirst("sub")?.Value;
+            }
+
+            if (string.IsNullOrEmpty(username))
+            {
+                return Unauthorized(new { success = false, message = "Username could not be determined." });
+            }
+
+            var result = await _userService.GetUserProfileAsync(username);
             return Ok(result);
         }
     }
