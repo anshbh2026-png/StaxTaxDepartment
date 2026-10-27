@@ -286,7 +286,6 @@ namespace StaxTaxDepartment.Services
             }
 
         }
-
         public async Task<ApiResponse<UserProfileResponse>> GetUserProfileAsync(string username)
         {
             try
@@ -299,7 +298,10 @@ namespace StaxTaxDepartment.Services
                 string gender = "Not Specified";
                 string email = "";
                 decimal mobile = 0;
-                string profileImage = "images/img.png"; // Default fallback image
+                string profileImage = "images/img.png"; 
+                string employeeCode = "";
+                string officeLocation = "";
+                string officerStatus = "";
 
                 if (userPrefix == "05")
                 {
@@ -314,15 +316,15 @@ namespace StaxTaxDepartment.Services
                 }
                 else
                 {
-                    // 1. Fetch login details to get auth_circle and auth_sect (just like legacy code uses Session values)
+                    // 1. Fetch login details to get auth_circle and auth_sect
                     var loginInfo = await connection.QueryFirstOrDefaultAsync<dynamic>(
-                        "SELECT auth_circle, auth_sect, username, permission FROM login WITH(NOLOCK) WHERE login_id = @Id",
+                        "SELECT officer_status, auth_circle, auth_sect, username, permission FROM login WITH(NOLOCK) WHERE login_id = @Id",
                         new { Id = username });
 
+                    officerStatus = loginInfo?.officer_status?.Trim() ?? "";
                     string circleCode = loginInfo?.auth_circle?.Trim() ?? "";
                     string sectorCode = loginInfo?.auth_sect?.Trim() ?? "";
                     string sessionName = loginInfo?.username?.Trim() ?? username;
-                    //int permission = loginInfo?.permission ?? 0;
 
                     // 2. Resolve Sector Name from sector_master
                     string sectorName = sectorCode;
@@ -345,7 +347,7 @@ namespace StaxTaxDepartment.Services
                     }
 
                     // 4. Exact Gst_Officer_Master lookup matching legacy query
-                    var officerQuery = @"SELECT Name, Sector,employeecode,Gender, Email, Mobile, Image 
+                    var officerQuery = @"SELECT Name, Sector, employeecode, Gender, Email, Mobile, Image 
                                  FROM Gst_Officer_Master 
                                  WHERE sector = @Sec1 OR sector = @Sec2 OR sector = @Sec3";
 
@@ -362,9 +364,9 @@ namespace StaxTaxDepartment.Services
                         designation = officer.Designation ?? "Tax Officer";
                         gender = officer.Gender ?? "Not Specified";
                         email = officer.Email ?? "";
-                        mobile = officer.Mobile;
+                        mobile = officer.Mobile ?? 0;
+                        employeeCode = officer.employeecode ?? "";
 
-                        // Handle Image BLOB to Base64 string conversion exactly like legacy code
                         if (officer.Image != null)
                         {
                             byte[] bytes = officer.Image as byte[];
@@ -374,22 +376,27 @@ namespace StaxTaxDepartment.Services
                             }
                         }
                     }
-                    //else
-                    //{
-                    //    // 5. Permission-based fallback naming rule from legacy Page_Load
-                    //    if (permission == 1 || permission == 4)
-                    //    {
-                    //        displayName = sessionName;
-                    //    }
-                    //    else if (permission == 23)
-                    //    {
-                    //        displayName = $"{circleName} {sessionName}".Trim();
-                    //    }
-                    //    else
-                    //    {
-                    //        displayName = $"{circleName} {sectorName}".Trim();
-                    //    }
-                    //}
+
+                    if (!string.IsNullOrEmpty(employeeCode))
+                    {
+                        var transferInfo = await connection.QueryFirstOrDefaultAsync<dynamic>(
+                            @"SELECT Designation, OfficeName, * 
+                      FROM View_Transfer_EmployeeWorkInfo 
+                      WHERE EmployeeCode = @EmpCode AND CAST(todate AS DATE) >= CAST(GETDATE() AS DATE)",
+                            new { EmpCode = employeeCode });
+
+                        if (transferInfo != null)
+                        {
+                            if (transferInfo.Designation != null)
+                            {
+                                designation = transferInfo.Designation;
+                            }
+                            if (transferInfo.OfficeName != null)
+                            {
+                                officeLocation = transferInfo.OfficeName;
+                            }
+                        }
+                    }
                 }
 
                 return new ApiResponse<UserProfileResponse>
@@ -398,13 +405,15 @@ namespace StaxTaxDepartment.Services
                     Message = "Profile fetched successfully",
                     Data = new UserProfileResponse
                     {
-                        EmployeeCode = username,
+                        EmployeeCode = employeeCode,
                         FullName = displayName,
                         Designation = designation,
                         Gender = gender,
                         Email = email,
                         Mobile = mobile,
-                        ProfileImageUrl = profileImage // Pass image string for frontend rendering
+                        ProfileImageUrl = profileImage,
+                        OfficeName = officeLocation,
+                        OfficerStatus = officerStatus
                     }
                 };
             }

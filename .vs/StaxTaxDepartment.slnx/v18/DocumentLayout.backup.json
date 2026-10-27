@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new clone project\\staxtaxdepartment\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new clone project\\staxtaxdepartment\\models\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\models\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new clone project\\staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new clone project\\staxtaxdepartment\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|solutionrelative:staxtaxdepartment\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB69C7E1-D592-1EAE-3947-0DFA81F6056F}|StaxTaxDepartment\\StaxTaxDepartment.csproj|d:\\new clone project\\staxtaxdepartment\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\ApiResponse.cs",
@@ -63,12 +67,24 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T07:12:52.357Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserProfileResponse.cs",
+              "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Models\\UserProfileResponse.cs",
+              "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\UserProfileResponse.cs",
+              "ToolTip": "D:\\new clone project\\StaxTaxDepartment\\Models\\UserProfileResponse.cs",
+              "RelativeToolTip": "StaxTaxDepartment\\Models\\UserProfileResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T04:41:21.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Controllers\\DashboardController.cs",
@@ -76,8 +92,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T07:09:00.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T07:09:00.983Z"
             },
             {
               "$type": "Document",
@@ -87,14 +102,14 @@
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Services\\UserService.cs",
               "ToolTip": "D:\\new clone project\\StaxTaxDepartment\\Services\\UserService.cs",
               "RelativeToolTip": "StaxTaxDepartment\\Services\\UserService.cs",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAMwFsBAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAJABAAAAAAAAAAAgwJ8BAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T06:31:31.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Program.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Program.cs",
@@ -102,12 +117,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Program.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAAADoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T06:29:20.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T06:29:20.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\appsettings.json",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\appsettings.json",
@@ -115,8 +129,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-15T06:28:35.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T06:28:35.178Z"
             },
             {
               "$type": "Document",
@@ -126,14 +139,14 @@
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\new clone project\\StaxTaxDepartment\\Controllers\\AuthController.cs",
               "RelativeToolTip": "StaxTaxDepartment\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAiwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwFkAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T06:33:59.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\LoginRequest.cs",
@@ -141,12 +154,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T07:13:37.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T07:13:37.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserMobileResponse.cs",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Models\\UserMobileResponse.cs",
@@ -154,12 +166,11 @@
               "RelativeToolTip": "StaxTaxDepartment\\Models\\UserMobileResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T04:27:28.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T04:27:28.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "StaxTaxDepartment.csproj",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\StaxTaxDepartment.csproj",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\StaxTaxDepartment.csproj",
@@ -171,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\new clone project\\StaxTaxDepartment\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "StaxTaxDepartment\\Properties\\launchSettings.json",
@@ -179,8 +190,7 @@
               "RelativeToolTip": "StaxTaxDepartment\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-15T05:41:05.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T05:41:05.085Z"
             }
           ]
         }

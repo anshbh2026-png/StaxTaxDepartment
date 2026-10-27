@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StaxTaxDepartment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc2ce6798fbe86e689f291bf9b19811c21363a84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1748ddf4c9a8669f5bc60420c4d7d7f3003f8fac")]
 [assembly: System.Reflection.AssemblyProductAttribute("StaxTaxDepartment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StaxTaxDepartment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
