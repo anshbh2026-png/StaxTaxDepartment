@@ -9,5 +9,7 @@
         public string Email { get; set; } = string.Empty;
         public decimal Mobile { get; set; } 
         public string ProfileImageUrl { get; set; } = "images/img.png";
+        public string OfficeName { get; set; }
+        public string OfficerStatus { get; set; }
     }
 }
